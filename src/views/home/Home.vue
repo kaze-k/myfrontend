@@ -1,19 +1,29 @@
 <script setup lang="ts">
-import { ElCard, ElIcon, ElDivider, ElLink } from 'element-plus'
+import { ElCard, ElIcon, ElDivider, ElLink, ElTooltip } from 'element-plus'
 import { StarFilled } from '@element-plus/icons-vue'
 </script>
 
 <template>
   <div class="container">
     <el-card class="item-container" shadow="hover">
-      <el-link type="success" href="http://github.com/kaze-k/web-nodejs"><img class="repo-card"
-          src="https://github-readme-stats.vercel.app/api/pin/?username=kaze-k&repo=web-nodejs" alt="项目仓库卡片"></el-link>
-      <el-link type="success" href="http://github.com/kaze-k/script"><img class="repo-card"
-          src="https://github-readme-stats.vercel.app/api/pin/?username=kaze-k&repo=script" alt="项目仓库卡片"></el-link>
+      <el-link type="success" href="http://github.com/kaze-k/myfrontend" target="_blank">
+        <el-tooltip content="该项目的前端源码仓库" placement="left">
+          <img class="repo-card" src="https://github-readme-stats.vercel.app/api/pin/?username=kaze-k&repo=myfrontend"
+            alt="项目仓库卡片">
+        </el-tooltip>
+      </el-link>
+      <el-link type="success" href="http://github.com/kaze-k/mybackend" target="_blank">
+        <el-tooltip content="该项目的后端源码仓库" placement="right">
+          <img class="repo-card" src="https://github-readme-stats.vercel.app/api/pin/?username=kaze-k&repo=mybackend"
+            alt="项目仓库卡片">
+        </el-tooltip>
+      </el-link>
     </el-card>
     <el-card id="banner-container" shadow="hover">
       <span id="title">
-        <el-link href="https://github.com/kaze-k" target="_blank">kaze</el-link>
+        <el-tooltip content="我的github地址" placement="top">
+          <el-link href="https://github.com/kaze-k" target="_blank">kaze</el-link>
+        </el-tooltip>
       </span>
       <el-divider>
         <el-icon>
