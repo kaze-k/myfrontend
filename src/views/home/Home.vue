@@ -6,18 +6,18 @@ import { StarFilled } from '@element-plus/icons-vue'
 <template>
   <div class="container">
     <el-card class="item-container" shadow="hover">
-      <el-link type="success" href="http://github.com/kaze-k/myfrontend" target="_blank">
+      <a href="http://github.com/kaze-k/myfrontend" target="_blank">
         <el-tooltip content="该项目的前端源码仓库" placement="left">
           <img class="repo-card" src="https://github-readme-stats.vercel.app/api/pin/?username=kaze-k&repo=myfrontend"
             alt="项目仓库卡片">
         </el-tooltip>
-      </el-link>
-      <el-link type="success" href="http://github.com/kaze-k/mybackend" target="_blank">
+      </a>
+      <a href="http://github.com/kaze-k/mybackend" target="_blank">
         <el-tooltip content="该项目的后端源码仓库" placement="right">
           <img class="repo-card" src="https://github-readme-stats.vercel.app/api/pin/?username=kaze-k&repo=mybackend"
             alt="项目仓库卡片">
         </el-tooltip>
-      </el-link>
+      </a>
     </el-card>
     <el-card id="banner-container" shadow="hover">
       <span id="title">
