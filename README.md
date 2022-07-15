@@ -1,14 +1,17 @@
 # myfrontend
 
-> 我的第一个前端项目
+![](https://img.shields.io/badge/vue-%5E3.2.13-green)
+![](https://img.shields.io/badge/element--plus-%5E2.2.6-blue)
+
+> 我的第一个前端项目:trollface:
 >
 > vue3+setup+element-plus前端项目，学生管理后台，包含管理员和普通用户的权限管理
 
-后端仓库：[mybackend](https://github.com/kaze-k/mybackend)
+🔗 后端仓库：[mybackend](https://github.com/kaze-k/mybackend)
 
-效果展示：[www.lsh28.cn:5000](http://www.lsh28.cn:5000)
+📺 效果展示：[www.lsh28.cn:5000](http://www.lsh28.cn:5000)
 
-## 项目设置
+## 💡 项目设置
 
 ### 安装项目依赖
 ```
@@ -33,7 +36,7 @@ yarn lint
 ### 自定义配置
 Vue CLI 的[配置参考](https://cli.vuejs.org/zh/config/)。
 
-## 项目部署
+## 🎬 项目部署
 
 ### Niginx配置
 ``` conf
@@ -55,30 +58,26 @@ vue Router [HTML5 History 模式](https://v3.router.vuejs.org/zh/guide/essential
 
 Nginx中文文档 [完整配置示例](https://www.nginx.cn/doc/example/fullexample2.html)
 
-## 功能
+## 🎨 功能
 
-- 初始页(登录和注册)
+📑 页面: 💬 页面功能简述
+
+- 初始页: 登录、注册
 - 404页(没有此页面的路由时才会显示)
 - 首页(没什么用)
-- 用户中心
-    - 修改当前用户密码
-    - 修改当前用户密码
+- 用户中心: 修改当前用户密码、修改当前用户密码
 - 学生管理
-    - 学生列表(需管理员权限)
-        - 增删查改学生信息
-    - 学生信息
-        - 学生信息预览(查询)
+    - 学生列表(需管理员权限): 增删查改学生信息
+    - 学生信息: 学生信息预览(查询)
 - 权限管理
-    - 管理员列表(需管理员权限)
-        - 增删查改用户信息(修改用户密码和用户名、新增用户、设置管理员、设置登录状态)
-    - 用户列表
-        - 当前已注册用户的预览(用户名、是否为管理员、是否为可登录)
+    - 管理员列表(需管理员权限): 增删查改用户信息(修改用户密码和用户名、新增用户、设置管理员、设置登录状态)
+    - 用户列表: 显示已有用户的用户名、是否为管理员、是否可登录
 
 > 默认root为超级管理员，无法修改用户名和密码，无法在权限管理的两个页面中显示其信息。
 >
 > 其他用户注册后都为普通用户，需root用户提权为管理员。
 
-## API
+## 🔌 API
 
 | 请求方式 | url                   | 参数                                                         | 功能 |
 | ---- | ----                   | ----                                                      | ---- |
