@@ -7,7 +7,7 @@ const filterTable = (tableData: any, value: any, search: any) =>
         case 'num':
           return !search.value ||
             data.num.toString().includes(search.value)
-        case 'class':
+        case 'Sclass':
           return !search.value ||
             data.class.toLowerCase().includes(search.value.toLowerCase())
         case 'Sname':

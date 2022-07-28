@@ -7,7 +7,7 @@ import { newStudentData, updateStudentData } from '@/api'
 // 表单
 const form = ref<any>({
   num: "",
-  class: "",
+  Sclass: "",
   Sname: "",
   sex: "男",
   age: 1,
@@ -20,7 +20,7 @@ const formRef = ref<FormInstance>()
 // 表单规则
 const rules = ref<FormRules>({
   num: { required: true, message: '不能为空', trigger: 'blur' },
-  class: { required: true, message: '不能为空', trigger: 'blur' },
+  Sclass: { required: true, message: '不能为空', trigger: 'blur' },
   Sname: { required: true, message: '不能为空', trigger: 'blur' },
   sex: { required: true, message: '不能为空', trigger: 'blur' },
   age: { required: true, message: '不能为空', trigger: 'blur' },
@@ -93,8 +93,8 @@ watch(() => props.dialogTableValue, () => {
       <el-form-item label="学号：" prop="num">
         <el-input v-model="form.num" placeholder="请输入学生学号" />
       </el-form-item>
-      <el-form-item label="班级：" prop="class">
-        <el-input v-model="form.class" placeholder="请输入学生班级" />
+      <el-form-item label="班级：" prop="Sclass">
+        <el-input v-model="form.Sclass" placeholder="请输入学生班级" />
       </el-form-item>
       <el-form-item label="姓名：" prop="Sname">
         <el-input v-model="form.Sname" placeholder="请输入学生姓名" />

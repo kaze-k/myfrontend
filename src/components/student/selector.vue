@@ -8,7 +8,7 @@ const options = [
     label: "学号",
   },
   {
-    value: "class",
+    value: "Sclass",
     label: "班级"
   },
   {
