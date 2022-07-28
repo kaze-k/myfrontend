@@ -9,7 +9,7 @@ const filterTable = (tableData: any, value: any, search: any) =>
             data.num.toString().includes(search.value)
         case 'Sclass':
           return !search.value ||
-            data.class.toLowerCase().includes(search.value.toLowerCase())
+            data.Sclass.toLowerCase().includes(search.value.toLowerCase())
         case 'Sname':
           return !search.value ||
             data.Sname.toLowerCase().includes(search.value.toLowerCase())
@@ -28,7 +28,7 @@ const filterTable = (tableData: any, value: any, search: any) =>
         default:
           return !search.value ||
             data.num.toString().includes(search.value) ||
-            data.class.toLowerCase().includes(search.value.toLowerCase()) ||
+            data.Sclass.toLowerCase().includes(search.value.toLowerCase()) ||
             data.Sname.toLowerCase().includes(search.value.toLowerCase()) ||
             data.sex.toLowerCase().includes(search.value.toLowerCase()) ||
             data.age.toString().includes(search.value) ||

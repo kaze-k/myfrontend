@@ -39,7 +39,7 @@ export const userOptions = [
         label: "学号"
     },
     {
-        prop: "class",
+        prop: "Sclass",
         label: "班级"
     },
     {
