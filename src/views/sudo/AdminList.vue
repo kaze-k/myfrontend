@@ -74,7 +74,8 @@ const changeRootState = (row: any) => {
       .catch(initGetList)
   } else {
     updatePermissions(row.id, row.isroot).then(res => {
-      ElMessage({ message: res.data.message, type: 'success', center: true, grouping: true, showClose: true })
+      if (res.data.code === 0) ElMessage({ message: res.data.message, type: 'success', center: true, grouping: true, showClose: true })
+      else ElMessage({ message: res.data.message, type: 'error', center: true, grouping: true, showClose: true })
     })
   }
 }
@@ -99,7 +100,8 @@ const changeLoginState = (row: any) => {
       .catch(initGetList)
   } else {
     updateLoginState(row.id, row.islogin).then(res => {
-      ElMessage({ message: res.data.message, type: 'success', center: true, grouping: true, showClose: true })
+      if (res.data.code === 0) ElMessage({ message: res.data.message, type: 'success', center: true, grouping: true, showClose: true })
+      else ElMessage({ message: res.data.message, type: 'error', center: true, grouping: true, showClose: true })
     })
   }
 }

@@ -41,9 +41,9 @@ export function studentList() {
 // 删除学生数据接口
 export function delStudentData(id: number) {
   return service({
-    method: 'post',
+    method: 'delete',
     url: '/student/delete',
-    data: id
+    data: { id }
   })
 }
 
@@ -59,7 +59,7 @@ export function newStudentData(data: object) {
 // 更新学生数据接口
 export function updateStudentData(data: Object) {
   return service({
-    method: 'post',
+    method: 'put',
     url: '/student/update',
     data
   })
@@ -84,7 +84,7 @@ export function getUsersList() {
 // 更新用户权限接口
 export function updatePermissions(id: number, state: boolean) {
   return service({
-    method: 'post',
+    method: 'put',
     url: '/users/permissions',
     data: {
       id,
@@ -96,7 +96,7 @@ export function updatePermissions(id: number, state: boolean) {
 // 更新用户登录状态接口
 export function updateLoginState(id: number, state: boolean) {
   return service({
-    method: 'post',
+    method: 'put',
     url: '/users/loginState',
     data: {
       id,
@@ -108,18 +108,18 @@ export function updateLoginState(id: number, state: boolean) {
 // 删除用户接口
 export function delUser(id: number) {
   return service({
-    method: 'post',
+    method: 'delete',
     url: '/users/delete',
-    data: id
+    data: { id }
   })
 }
 
 // 更新用户信息接口
 export function updateUser(data: object) {
   return service({
-    method: 'post',
+    method: 'put',
     url: '/users/update',
-    data
+    data: data
   })
 }
 
@@ -128,7 +128,7 @@ export function addUser(data: object) {
   return service({
     method: 'post',
     url: '/users/add',
-    data
+    data: data
   })
 }
 

@@ -38,9 +38,6 @@ service.interceptors.response.use(
         // ElLoading.service().close()
         if (response.status !== 200) {
             ElMessage({ message: "服务器错误：" + response.status, type: 'warning', center: true })
-        }
-
-        if (response.data.message === "身份验证失败") {
             router.push("/login")
         }
         return response
